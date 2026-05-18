@@ -7,12 +7,17 @@
     <meta name="description" content="Discover modern elegance with our handcrafted Indian Kurtis. Shop premium quality ethnic wear designed for the contemporary woman.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
+    <!-- Decorative Background Gradients for Glassmorphism -->
+    <div class="bg-gradient blob-1"></div>
+    <div class="bg-gradient blob-2"></div>
+    <div class="bg-gradient blob-3"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -33,54 +38,56 @@
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-bg">
-            <img src="assets/kurti_hero.png" alt="Elegant modern Indian Kurti model in architectural setting">
-            <div class="hero-overlay"></div>
+        <div class="hero-image-wrapper">
+            <img src="assets/kurti_hero.png" alt="Elegant modern Indian Kurti model" class="hero-img">
+            <div class="hero-fade"></div>
         </div>
         <div class="hero-content">
-            <span class="badge">Festive Collection 2026</span>
-            <h1>Elegance Woven<br>Into Every Thread</h1>
-            <p>Experience the perfect blend of traditional craftsmanship and modern design. Discover Kurtis that empower your everyday grace.</p>
-            <div class="hero-cta">
-                <a href="#collections" class="btn btn-primary">Shop Collection <i class="ph ph-arrow-right"></i></a>
-                <a href="#our-story" class="btn btn-outline">Explore Craft</a>
+            <div class="glass-panel">
+                <span class="badge">Luxe Collection '26</span>
+                <h1>Modernity Meets <br> <span class="italic-accent">Tradition</span></h1>
+                <p>Experience the perfect blend of ancestral craftsmanship and contemporary silhouettes. Discover Kurtis that define your modern grace.</p>
+                <div class="hero-cta">
+                    <a href="#collections" class="btn btn-primary">Shop Collection <i class="ph ph-arrow-right"></i></a>
+                    <a href="#our-story" class="btn btn-outline">Explore Craft</a>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Features -->
     <section class="features">
-        <div class="feature-item">
+        <div class="glass-card feature-item">
             <div class="feature-icon"><i class="ph ph-leaf"></i></div>
-            <h3>Premium Fabrics</h3>
-            <p>Ethically sourced silk and cotton</p>
+            <h3>Organic Silks</h3>
+            <p>Ethically sourced and pure</p>
         </div>
-        <div class="feature-item">
-            <div class="feature-icon"><i class="ph ph-needle"></i></div>
-            <h3>Handcrafted Details</h3>
-            <p>Intricate embroidery by artisans</p>
+        <div class="glass-card feature-item">
+            <div class="feature-icon"><i class="ph ph-sparkle"></i></div>
+            <h3>Artisan Crafted</h3>
+            <p>Intricate detailing by hand</p>
         </div>
-        <div class="feature-item">
-            <div class="feature-icon"><i class="ph ph-truck"></i></div>
-            <h3>Free Shipping</h3>
-            <p>On all orders across the globe</p>
+        <div class="glass-card feature-item">
+            <div class="feature-icon"><i class="ph ph-globe-hemisphere-west"></i></div>
+            <h3>Global Delivery</h3>
+            <p>Complimentary worldwide</p>
         </div>
     </section>
 
     <!-- Best Sellers Section -->
     <section id="collections" class="best-sellers">
         <div class="section-header">
-            <h2>Trending Now</h2>
-            <p>Our most loved styles this season</p>
+            <h2>The <span class="italic-accent">Curated</span> Edit</h2>
+            <p>Signature pieces loved by our community</p>
         </div>
         <div class="product-grid">
             <!-- Product 1 -->
-            <div class="product-card">
+            <div class="glass-card product-card">
                 <div class="product-image">
                     <img src="assets/kurti_product_1.png" alt="White and gold embroidered Kurti">
-                    <div class="product-actions">
+                    <div class="product-overlay">
                         <button class="btn-action"><i class="ph ph-heart"></i></button>
-                        <button class="btn-action"><i class="ph ph-shopping-cart-simple"></i></button>
+                        <button class="btn btn-primary w-full">Quick Add - $120</button>
                     </div>
                     <span class="tag">Bestseller</span>
                 </div>
@@ -90,12 +97,12 @@
                 </div>
             </div>
             <!-- Product 2 -->
-            <div class="product-card">
+            <div class="glass-card product-card">
                 <div class="product-image">
                     <img src="assets/kurti_product_2.png" alt="Casual floral block print summer Kurti">
-                    <div class="product-actions">
+                    <div class="product-overlay">
                         <button class="btn-action"><i class="ph ph-heart"></i></button>
-                        <button class="btn-action"><i class="ph ph-shopping-cart-simple"></i></button>
+                        <button class="btn btn-primary w-full">Quick Add - $85</button>
                     </div>
                 </div>
                 <div class="product-info">
@@ -104,12 +111,12 @@
                 </div>
             </div>
             <!-- Product 3 -->
-            <div class="product-card">
+            <div class="glass-card product-card">
                 <div class="product-image">
                     <img src="assets/kurti_product_3.png" alt="Maroon festive silk Kurti">
-                    <div class="product-actions">
+                    <div class="product-overlay">
                         <button class="btn-action"><i class="ph ph-heart"></i></button>
-                        <button class="btn-action"><i class="ph ph-shopping-cart-simple"></i></button>
+                        <button class="btn btn-primary w-full">Quick Add - $180</button>
                     </div>
                     <span class="tag">New</span>
                 </div>
@@ -120,24 +127,27 @@
             </div>
         </div>
         <div class="center-btn">
-            <a href="#" class="btn btn-secondary">View All Products</a>
+            <a href="#" class="btn btn-secondary">Explore All Designs <i class="ph ph-arrow-right"></i></a>
         </div>
     </section>
 
     <!-- Brand Story Section -->
     <section id="our-story" class="brand-story">
-        <div class="story-image">
-            <img src="assets/kurti_craftsmanship.png" alt="Artisan weaving beautiful ethnic fabric">
-            <div class="floating-stat">
-                <h4>20+</h4>
-                <p>Years of Heritage</p>
+        <div class="story-image-container">
+            <div class="story-image glass-card">
+                <img src="assets/kurti_craftsmanship.png" alt="Artisan weaving beautiful ethnic fabric">
+            </div>
+            <div class="floating-stat glass-card">
+                <h4>100+</h4>
+                <p>Master Artisans</p>
             </div>
         </div>
         <div class="story-content">
-            <h2 class="section-title">Preserving Heritage,<br>Defining Modernity</h2>
-            <p>At Aaranya, we believe that true elegance lies in the details. Every Kurti in our collection is a testament to the rich textile heritage of India, brought to life through the hands of master artisans.</p>
+            <span class="subtitle">Our Heritage</span>
+            <h2 class="section-title">Woven with <br><span class="italic-accent">Passion</span></h2>
+            <p>At Aaranya, true luxury is unhurried. Every Kurti in our collection is a testament to the rich textile heritage of India, brought to life through the hands of master artisans.</p>
             <p>From sourcing the finest raw silks to finalizing the delicate zari work, our process is a labor of love designed to make you feel extraordinary.</p>
-            <a href="#" class="btn btn-link">Learn About Our Artisans <i class="ph ph-arrow-right"></i></a>
+            <a href="#" class="btn btn-link">Discover Our Process <i class="ph ph-arrow-right"></i></a>
         </div>
     </section>
 
@@ -157,30 +167,30 @@
                 <h4>Shop</h4>
                 <a href="#">New Arrivals</a>
                 <a href="#">Best Sellers</a>
-                <a href="#">Sale</a>
                 <a href="#">Collections</a>
+                <a href="#">Accessories</a>
             </div>
             <div class="footer-links">
-                <h4>Support</h4>
-                <a href="#">FAQ</a>
+                <h4>Assistance</h4>
+                <a href="#">Help Center</a>
                 <a href="#">Shipping & Returns</a>
                 <a href="#">Size Guide</a>
                 <a href="#">Contact Us</a>
             </div>
             <div class="footer-newsletter">
-                <h4>Stay in the loop</h4>
-                <p>Sign up for exclusive offers and news.</p>
+                <h4>Join the Club</h4>
+                <p>Exclusive previews and artisanal stories.</p>
                 <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit"><i class="ph ph-paper-plane-right"></i></button>
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit"><i class="ph ph-arrow-right"></i></button>
                 </form>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Aaranya. All rights reserved.</p>
             <div class="legal-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
             </div>
         </div>
     </footer>
